@@ -8,27 +8,7 @@ import { BottomWarning } from "../Components/BottomWarning";
 export function Signup() {
   const navigate = useNavigate();
 
-  /* const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState(""); */
-
   function dataHandler() {
-    /* const res = await axios.post(
-      "http://localhost:3000/api/v1/user/signup",
-      {
-        username: email,
-        password: password,
-        firstName : firstName,
-        lastName: lastName
-      });
-    console.log(res.data);
-    if (res.status === 200) {
-      
-      localStorage.setItem("authToken", res.data.token);
-    } else if (res.status === 411) {
-      console.log(res.data);
-    } */
     navigate("/signin");
   }
 
