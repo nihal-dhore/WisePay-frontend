@@ -2,7 +2,6 @@ import { Button } from "../Components/Button";
 import { Heading } from "../Components/Heading";
 import { InputBox } from "../Components/InputBox";
 
-
 export function Send() {
   return (
     <div className="flex justify-center my-[290px] h-[470]">

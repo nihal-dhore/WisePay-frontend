@@ -32,7 +32,7 @@ export function Signup() {
           paddingLeft: "40px",
           paddingRight: "40px",
           paddingTop: "30px",
-          paddingBottom: "20px"
+          paddingBottom: "20px",
         }}
       >
         <Heading label={"Sign Up"} />
