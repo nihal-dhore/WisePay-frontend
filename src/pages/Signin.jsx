@@ -9,7 +9,7 @@ import { useState } from "react";
 
 export function Signin() {
 
-  const navigate = useNavigate();
+  /* const navigate = useNavigate();
 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -24,7 +24,7 @@ export function Signin() {
       navigate("/dashboard");
       localStorage.setItem("authToken", res.data.token);
     }
-  }
+  } */
 
   return (
     <div className="flex justify-center my-[220px] h-[470]">
