@@ -9,22 +9,23 @@ import { useState } from "react";
 
 export function Signin() {
 
-  /* const navigate = useNavigate();
+  const navigate = useNavigate();
 
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+  /*const [username, setUsername] = useState("");
+  const [password, setPassword] = useState(""); */
 
-  async function dataHandler() {
-    const res = await axios.post("http://localhost:3000/api/v1/user/signin", {
+  function dataHandler() {
+    /* const res = await axios.post("http://localhost:3000/api/v1/user/signin", {
       username,
       password
-    });
+    }); */
     //console.log(res.data);
-    if(res.status === 200) {
-      navigate("/dashboard");
+    /* if(res.status === 200) {
+      
       localStorage.setItem("authToken", res.data.token);
-    }
-  } */
+    } */
+    navigate("/dashboard");
+  }
 
   return (
     <div className="flex justify-center my-[220px] h-[470]">
@@ -33,7 +34,7 @@ export function Signin() {
         <Subheading label={"Enter your credentials to access your account"} />
         <InputBox label={"Email"} placeholder={"adityasharma@example.com"}  />
         <InputBox label={"Password"}  />
-        <Button label={"Sign in"} /* onClick={dataHandler} *//>
+        <Button label={"Sign in"} onClick={dataHandler}/>
         <BottomWarning label={"Don't have an account? "} buttonText={"Sign Up"} to={"/signup"} />
       </div>
     </div>

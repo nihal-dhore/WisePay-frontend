@@ -3,7 +3,7 @@ import { Button } from "../Components/Button";
 import { Heading } from "../Components/Heading";
 import { InputBox } from "../Components/InputBox";
 import { useState } from "react";
-import axios from "axios";
+// import axios from "axios";
 
 export function Send() {
   const[amount, setAmount] = useState(0);
@@ -22,7 +22,7 @@ export function Send() {
           <div className="font-bold">{name}</div>
         </div>
         <InputBox label={"Amount in Rs"} placeholder={"Enter Amount"} onChange={(e) => setAmount(e.target.value)} />
-        <Button onClick={() => {
+        <Button /* onClick={() => {
           axios.post("http://localhost:3000/api/v1/account/transfer", {
             to : id,
             amount : amount
@@ -31,7 +31,7 @@ export function Send() {
               Authorization: "Bearer " + localStorage.getItem("authToken") 
             }
           })
-        }} label={"Proceed"} />
+        }} */ label={"Proceed"} />
       </div>
     </div>
   );

@@ -11,10 +11,10 @@ export function Signup() {
   /* const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [password, setPassword] = useState(""); */
 
-  async function dataHandler() {
-    const res = await axios.post(
+  function dataHandler() {
+    /* const res = await axios.post(
       "http://localhost:3000/api/v1/user/signup",
       {
         username: email,
@@ -24,12 +24,13 @@ export function Signup() {
       });
     console.log(res.data);
     if (res.status === 200) {
-      navigate("/signin");
+      
       localStorage.setItem("authToken", res.data.token);
     } else if (res.status === 411) {
       console.log(res.data);
-    }
-  } */
+    } */
+    navigate("/signin");
+  }
 
   return (
     <div //main
@@ -60,7 +61,7 @@ export function Signup() {
         <InputBox label={"Last Name"} placeholder={"Sharma"} />
         <InputBox label={"Email"} placeholder={"adityasharma@example.com"} />
         <InputBox label={"Password"} />
-        <Button /* onClick={dataHandler} */ label={"Sign up"} />
+        <Button onClick={dataHandler} label={"Sign up"} />
         <BottomWarning
           label={"Already have an account? "}
           buttonText={"Sign in"}
