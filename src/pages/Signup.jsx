@@ -1,11 +1,9 @@
-//import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { Heading } from "../Components/Heading";
 import { Subheading } from "../Components/Subheading";
 import { InputBox } from "../Components/InputBox";
 import { Button } from "../Components/Button";
 import { BottomWarning } from "../Components/BottomWarning";
-import { useState } from "react";
 
 export function Signup() {
   const navigate = useNavigate();
@@ -58,19 +56,11 @@ export function Signup() {
       >
         <Heading label={"Sign Up"} />
         <Subheading label={"Enter your credentials to Create your account"} />
-        <InputBox onChange={e => {
-          setFirstName(e.target.value);
-        }} label={"First Name"} placeholder={"Aditya"} />
-        <InputBox onChange={e => {
-          setLastName(e.target.value);
-        }} label={"Last Name"} placeholder={"Sharma"} />
-        <InputBox onChange={e => {
-          setEmail(e.target.value);
-        }} label={"Email"} placeholder={"adityasharma@example.com"} />
-        <InputBox onChange={e => {
-          setPassword(e.target.value);
-        }} label={"Password"} />
-        <Button onClick={dataHandler} label={"Sign up"} />
+        <InputBox label={"First Name"} placeholder={"Aditya"} />
+        <InputBox label={"Last Name"} placeholder={"Sharma"} />
+        <InputBox label={"Email"} placeholder={"adityasharma@example.com"} />
+        <InputBox label={"Password"} />
+        <Button /* onClick={dataHandler} */ label={"Sign up"} />
         <BottomWarning
           label={"Already have an account? "}
           buttonText={"Sign in"}

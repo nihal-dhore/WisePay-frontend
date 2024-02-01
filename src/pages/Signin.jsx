@@ -31,9 +31,9 @@ export function Signin() {
       <div className="w-[380px] px-[40px] pt-[50px] pb-[25px] rounded-[20px] bg-black text-white ">
         <Heading label={"Sign In"} />
         <Subheading label={"Enter your credentials to access your account"} />
-        <InputBox label={"Email"} placeholder={"adityasharma@example.com"} onChange={e => setUsername(e.target.value)} />
-        <InputBox label={"Password"} onChange={e => setPassword(e.target.value)} />
-        <Button label={"Sign in"} onClick={dataHandler}/>
+        <InputBox label={"Email"} placeholder={"adityasharma@example.com"}  />
+        <InputBox label={"Password"}  />
+        <Button label={"Sign in"} /* onClick={dataHandler} *//>
         <BottomWarning label={"Don't have an account? "} buttonText={"Sign Up"} to={"/signup"} />
       </div>
     </div>
