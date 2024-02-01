@@ -1,4 +1,4 @@
-//import axios from "axios";
+
 import { useNavigate } from "react-router-dom";
 import { Heading } from "../Components/Heading";
 import { Subheading } from "../Components/Subheading";
@@ -11,19 +11,8 @@ export function Signin() {
 
   const navigate = useNavigate();
 
-  /*const [username, setUsername] = useState("");
-  const [password, setPassword] = useState(""); */
-
   function dataHandler() {
-    /* const res = await axios.post("http://localhost:3000/api/v1/user/signin", {
-      username,
-      password
-    }); */
-    //console.log(res.data);
-    /* if(res.status === 200) {
-      
-      localStorage.setItem("authToken", res.data.token);
-    } */
+    
     navigate("/dashboard");
   }
 

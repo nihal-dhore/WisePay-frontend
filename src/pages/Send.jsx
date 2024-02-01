@@ -9,10 +9,10 @@ export function Send() {
       <div className="w-[380px] px-[40px] pt-[50px] pb-[35px] rounded-[20px] bg-black text-white">
         <Heading label={"Pay Now"} />
         <div className="flex justify-start items-center mt-6">
-          <div className="mr-4 font-bold w-10 h-10 rounded-full bg-white text-center pt-[5px] text-[24px]">
-            {"username".slice(0, 1).toUpperCase()}
+          <div className="mr-4 font-bold w-10 h-10 rounded-full bg-white text-center pt-[5px] text-[22px] text-black align-middle mt-0">
+            N
           </div>
-          <div className="font-bold">{name}</div>
+          <div className="font-bold">Nihal</div>
         </div>
         <InputBox label={"Amount in Rs"} placeholder={"Enter Amount"} />
         <Button label={"Proceed"} />

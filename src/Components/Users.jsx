@@ -1,20 +1,16 @@
 import { useEffect, useState } from "react";
 import { User } from "./User";
-// import axios from "axios";
 
 export const Users = () => {
-  const [users, setUsers] = useState([]);
+  const [users, setUsers] = useState([
+    {
+      firstName: "Nihal",
+      lastName: "Dhore",
+      _id: 1,
+    },
+  ]);
   const [query, setQuery] = useState("");
 
-  useEffect(() => {
-    async function fetch() {
-      const res = await axios.get("http://localhost:3000/api/v1/user/bulk?filter" + query);
-
-      setUsers(res.data.user);
-    }
-
-    fetch();
-  }, [query]);
   return (
     <div>
       <div className="mx-16 my-6">
@@ -26,7 +22,7 @@ export const Users = () => {
         />
       </div>
       <div>
-        {users.map(user => (
+        {users.map((user) => (
           <User key={user._id} user={user} />
         ))}
       </div>
